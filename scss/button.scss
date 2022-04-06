@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+.btn {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+}
+
+.btn-gradient {
+    background: $gradient;
+    color: $very-light-grayish-blue;
+    transition: all .35s;
+    border: 1px solid transparent;
+
+    &:hover {
+        background: transparent;
+        border-color: hsl(237, 63%, 64%);
+        color: hsl(237, 63%, 64%);
+    }
+}
+
+.btn-white {
+    color: hsl(237, 63%, 64%);
+    background: none;
+    background-color: $very-light-grayish-blue;
+    border: 1px solid transparent;
+
+    &:hover {
+        background: transparent;
+        border-color: #fff;
+        color: #fff;
+    }
+}

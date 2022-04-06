@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.list {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    color: $grayish-blue;
+    margin: 15px 0;
+}
+
+.list__item {
+    padding: 15px 0;
+    border-color: $grayish-blue;
+    border-top: .5px solid;
+
+    &:last-of-type {
+        border-bottom: .5px solid;
+    }
+}
+
+.card-professional .list {
+    color: $very-light-grayish-blue;
+
+    .list__item {
+        border-color: $very-light-grayish-blue;
+    }
+}

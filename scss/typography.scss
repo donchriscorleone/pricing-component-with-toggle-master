@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+h1 {
+    font-size: 2rem;
+    color: $grayish-blue;
+}
+
+h2 {
+    font-size: 1.72rem;
+}
+
+span {
+    color: $light-grayish-blue;
+}
+
+.price {
+    font-size: 3.5rem;
+
+    &::first-letter {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    span {
+        font-size: 1.2rem;
+    }
+}

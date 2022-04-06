@@ -1,0 +1,97 @@
+@import './variables.scss';
+
+html {
+    font-size: 15px;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $montserrat; 
+}
+
+body {
+    background-color: $very-light-grayish-blue;
+    display: grid;
+    row-gap: 40px;
+    place-items: center;
+    min-height: 100vh;
+    padding: 0 30px;
+    background-image: url('./../images/bg-top.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.header {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    margin: 40px auto 0;
+}
+
+.pricing-mode {
+    width: 100%;
+    column-gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.cards {
+    display: grid;
+    row-gap: 50px;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto 30px;
+    max-height: 500px;
+    align-self: flex-start;
+}
+
+.attribution {
+    margin: 0 auto;
+
+    a {
+        color: #ccc;
+        text-decoration: none;
+        transition: all .4s;
+        
+
+        &:hover, &:visited {
+            color: #aaa;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        row-gap: 30px;
+        background-image: url('./../images/bg-top.svg'), url('./../images/bg-bottom.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: top right, bottom left;
+        position: relative;
+    }
+
+    .cards {
+        max-width: 950px;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .attribution {
+        bottom: 5px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+    }
+}
+
+@import './typography.scss';
+@import './toggle.scss';
+@import './list.scss';
+@import './button.scss';
+@import './card.scss';
+
